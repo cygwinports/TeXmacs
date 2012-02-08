@@ -1,0 +1,18 @@
+inherit qt4
+
+HOMEPAGE="http://www.texmacs.org/"
+SRC_URI="http://www.texmacs.org/Download/ftp/tmftp/source/${P}-src.tar.gz"
+SRC_DIR="${P}-src"
+PATCH_URI="1.0.7.14-cygwin-gs.patch"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf --with-iconv=/usr --with-imlib2=linked --with-gs --with-qt=${QT4_QTDIR}
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	cyginstall CP="cp -Lfr"
+}

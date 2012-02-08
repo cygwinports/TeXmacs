@@ -1,0 +1,10 @@
+category: Editors
+requires: aspell ghostscript ImageMagick libfreetype6 libgcc1 libguile17 libiconv2 libImlib2_1 libQtCore4 libQtGui4 libstdc++6 netpbm python rsvg texlive texlive-collection-basic texlive-collection-fontutils texlive-collection-latexrecommended xmodmap
+sdesc: "WYSIWYG editor for science and math"
+ldesc: "GNU TeXmacs is a free wysiwyw (what you see is what you want) 
+editing platform with special features for scientists. The software aims 
+to provide a unified and user friendly framework for editing structured 
+documents with different types of content (text, graphics, mathematics, 
+interactive content, etc.). The rendering engine uses high-quality 
+typesetting algorithms so as to produce professionally looking 
+documents, which can either be printed out or presented from a laptop."

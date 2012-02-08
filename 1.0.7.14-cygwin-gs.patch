@@ -1,0 +1,10 @@
+--- origsrc/TeXmacs-1.0.7.14-src/misc/scripts/tm_gs	2011-09-07 15:49:36.000000000 -0500
++++ src/TeXmacs-1.0.7.14-src/misc/scripts/tm_gs	2012-02-08 04:43:01.202963100 -0600
+@@ -1,6 +1,6 @@
+ #!/bin/sh
+ # Under Cygwin, prevent the X version of gs to be shadowed by a non-X version.
+-if [ -f /usr/bin/cygwin1.dll ] ; then
++if [ -x /usr/X11R6/bin/gs ] ; then
+   TEXMACS_GS=/usr/X11R6/bin/gs
+ else
+   TEXMACS_GS=gs
